@@ -1,4 +1,4 @@
-module github.com/WuKongIM/WuKongIMGoSDK
+module github.com/yytt5301/WuKongIMGoSDK
 
 go 1.20
 

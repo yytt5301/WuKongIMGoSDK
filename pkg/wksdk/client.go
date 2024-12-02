@@ -202,7 +202,7 @@ func (c *Client) processPingTimer() {
 	if c.connectStatus != CONNECTED {
 		return
 	}
-	if c.lastActivity.Add(c.opts.PingInterval).Before(time.Now()) {
+	if c.lastActivity.Add(c.opts.PingInterval*2).Before(time.Now()) {
 		if c.forceDisconnect {
 			return
 		}
